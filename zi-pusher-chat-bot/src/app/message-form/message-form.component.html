@@ -1,0 +1,19 @@
+<form>
+    <div class="field">
+      <label class="label">Message : </label>
+      <div class="control">
+        <input
+          class="input"
+          type="text"
+          placeholder="Post Message"
+          name="message"
+          [(ngModel)]="message"
+        />
+      </div>
+    </div>
+      
+    <button (click)="submit()" class="button is-info">
+        Send
+      </button>
+    
+  </form>
