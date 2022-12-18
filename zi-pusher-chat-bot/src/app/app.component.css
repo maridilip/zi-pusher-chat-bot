@@ -1,0 +1,42 @@
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+  .form-container {
+    width: 100%;
+    padding: 23px 17px 20px;
+    box-sizing: border-box;
+    color: black;
+    border-radius: 15px;
+    background: white;
+    border: 1px solid rgb(44, 96, 215);
+    margin: 0px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+  .label {
+    border: none;
+    padding: 0px;
+    background: transparent;
+    width: calc(100% - 40px);
+    font-size: 14px;
+    line-height: 17px;
+    color: rgb(73, 84, 101);
+    z-index: 1;
+    outline: none;
+  }
+  
+  .gRuMQg {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+  }
+  
+  .iFvQhj {
+    height: 16px;
+    width: 16px;
+  }
+  

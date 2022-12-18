@@ -44,7 +44,7 @@ export class PusherChatServiceService {
       console.log('client-widget-messge', data);
       this.subject.next(
         new Message(
-          data?.message.text || '@test bot',
+          data?.message?.text || '@test bot',
           data?.sender?.id === 'bot'
         )
       );

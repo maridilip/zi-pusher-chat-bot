@@ -1,19 +1,16 @@
-<form>
-    <div class="field">
-      <label class="label">Message : </label>
-      <div class="control">
-        <input
-          class="input"
-          type="text"
-          placeholder="Post Message"
-          name="message"
-          [(ngModel)]="message"
-        />
-      </div>
+<div class="msg-container">
+  <p [ngClass]="{'cb-f-l': isChatBot, 'cb-f-r': !isChatBot}">{{message}}</p>
+
+  <div *ngIf="dataInput.key == 'email'" id="insent-input-message-input-box-body" class="sc-kAzzGY hXBrhe">
+    <div id="insent-input-message-input-box-body-label" class="sc-chPdSV bWAEaf">Email</div>
+    <div id="insent-input-message-input-box-body-input-validate" class="sc-dxgOiQ jQYHWS">
+      <form id="insent-input-message-input-box-body-input-form" class="sc-kpOJdX gFsgYH">
+        <label for="{{dataInput.key}}" class="sc-kgoBCf hMlgIH"></label>
+        <input name="{{dataInput.key}}" autocomplete="off" minlength="1" maxlength="50" class="sc-kGXeez btVPjK" value="" placeholder="Enter your email">
+        <button class="sc-ckVGcZ gRuMQg">
+          <svg id="insent-input-box-bode-input-submit-icon" class="sc-eNQAEJ iFvQhj"><path d="M1.21644 0.0924218C0.664925 -0.185081 0 0.195829 0 0.788806V4.00309V5.57896V5.99101C0 6.44843 0.360638 6.83313 0.838516 6.88558L7.65962 7.63393C8.10814 7.68312 8.10814 8.30248 7.65962 8.3517L0.838516 9.10005C0.360638 9.15247 0 9.53721 0 9.99462V12.0076V13.5834V15.328C0 15.7445 0.354561 16.0346 0.789781 15.9871C1.22599 15.9394 -0.465961 16.7401 15.5278 8.6892C16.1147 8.39365 16.115 7.59199 15.5278 7.2964L1.21644 0.0924218Z" fill="#2c60d7"></path></svg>
+        </button>
+      </form>
     </div>
-      
-    <button (click)="submit()" class="button is-info">
-        Send
-      </button>
-    
-  </form>
+  </div>
+</div>
